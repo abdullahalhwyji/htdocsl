@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Competitions and Prizes</title>
+    <!-- Include necessary CSS -->
+    <link rel="stylesheet" href="/CSS/Data/compitition.css">
+</head>
+<body>
+
+<form action="submit.php" method="post" enctype="multipart/form-data">
+    <h1>Competitions and Prizes</h1>
+
+    <!-- Competition/Prize Name: Text input -->
+    <label for="competitionName">Competition/Prize Name:</label>
+    <input type="text" id="competitionName" name="competitionName" required>
+
+    <!-- Organizer: Text input -->
+    <label for="organizer">Organizer:</label>
+    <input type="text" id="organizer" name="organizer" required>
+
+    <!-- Description: Text area for a brief overview -->
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" rows="4" required></textarea>
+
+    <!-- Deadline: Date picker or text input -->
+    <label for="deadline">Deadline:</label>
+    <input type="date" id="deadline" name="deadline" required>
+
+    <!-- Eligibility Criteria: Text area or checkboxes/radio buttons -->
+    <label for="eligibilityCriteria">Eligibility Criteria:</label>
+    <textarea id="eligibilityCriteria" name="eligibilityCriteria" rows="4" required></textarea>
+    <!-- Or use checkboxes/radio buttons here -->
+
+    <!-- Prize Details: Text area or a structured form -->
+    <label for="prizeDetails">Prize Details:</label>
+    <textarea id="prizeDetails" name="prizeDetails" rows="4" required></textarea>
+    <!-- Or use structured form inputs -->
+
+    <!-- Application Process: Text area or a step-by-step form -->
+    <label for="applicationProcess">Application Process:</label>
+    <textarea id="applicationProcess" name="applicationProcess" rows="4" required></textarea>
+    <!-- Or use step-by-step form inputs -->
+
+    <!-- Judging Criteria: Text area or a structured form -->
+    <label for="judgingCriteria">Judging Criteria:</label>
+    <textarea id="judgingCriteria" name="judgingCriteria" rows="4" required></textarea>
+    <!-- Or use structured form inputs -->
+
+    <!-- Notes: Text Area -->
+    <label for="notes">Notes:</label>
+    <textarea id="notes" name="notes" rows="4" required></textarea>
+
+    <!-- Application Link: URL input -->
+    <label for="applicationLink">Application Link:</label>
+    <input type="url" id="applicationLink" name="applicationLink" required>
+
+    <!-- Upload Photo -->
+    <label for="photo">Upload Photo:</label>
+    <input type="file" id="photo" name="photo" accept="image/*">
+
+    <!-- Submit Button -->
+    <input type="submit" value="Submit">
+</form>
+
+<!-- Include necessary scripts if any -->
+<script src="your-scripts.js"></script>
+
+</body>
+</html>

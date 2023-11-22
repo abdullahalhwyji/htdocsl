@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events and Conferences</title>
+    <!-- Include necessary CSS -->
+    <link rel="stylesheet" href="/CSS/Data/events.css">
+</head>
+<body>
+
+<form action="submit.php" method="post" enctype="multipart/form-data">
+    <h1>Events and Conferences</h1>
+
+    <!-- Event/Conference Name: Text input -->
+    <label for="eventName">Event/Conference Name:</label>
+    <input type="text" id="eventName" name="eventName" required>
+
+    <!-- Organizing Institution/Organization: Text input -->
+    <label for="organizingInstitution">Organizing Institution/Organization:</label>
+    <input type="text" id="organizingInstitution" name="organizingInstitution" required>
+
+    <!-- Description: Text area -->
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" rows="4" required></textarea>
+
+    <!-- Date and Time: Date and time pickers -->
+    <label for="dateTime">Date and Time:</label>
+    <input type="datetime-local" id="dateTime" name="dateTime" required>
+
+    <!-- Location/Venue: Text input or dropdown -->
+    <label for="location">Location/Venue:</label>
+    <input type="text" id="location" name="location" required>
+    <!-- Or use dropdown/select options for city/venue name -->
+
+    <!-- Registration Deadline: Date picker or text input -->
+    <label for="regDeadline">Registration Deadline:</label>
+    <input type="date" id="regDeadline" name="regDeadline" required>
+
+    <!-- Registration Fees: Text input or dropdown -->
+    <label for="regFees">Registration Fees:</label>
+    <input type="text" id="regFees" name="regFees" required>
+    <!-- Or use dropdown/select options for free/paid -->
+
+    <!-- Notes: Text Area -->
+    <label for="notes">Notes:</label>
+    <textarea id="notes" name="notes" rows="4" required></textarea>
+
+    <!-- Application Link: URL input -->
+    <label for="applicationLink">Application Link:</label>
+    <input type="url" id="applicationLink" name="applicationLink" required>
+
+    <!-- Upload Photo -->
+    <label for="photo">Upload Photo:</label>
+    <input type="file" id="photo" name="photo" accept="image/*">
+
+    <!-- Submit Button -->
+    <input type="submit" value="Submit">
+</form>
+
+<!-- Include necessary scripts if any -->
+<script src="your-scripts.js"></script>
+
+</body>
+</html>

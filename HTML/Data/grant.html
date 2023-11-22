@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Financial Grants</title>
+    <!-- Include necessary CSS -->
+    <link rel="stylesheet" href="/CSS/Data/grant.css">
+</head>
+<body>
+
+<form action="submit.php" method="post" enctype="multipart/form-data">
+    <h1>Financial Grants</h1>
+
+    <!-- Grant Name: Text input -->
+    <label for="grantName">Grant Name:</label>
+    <input type="text" id="grantName" name="grantName" required>
+
+    <!-- Granting Organization: Text input -->
+    <label for="grantingOrg">Granting Organization:</label>
+    <input type="text" id="grantingOrg" name="grantingOrg" required>
+
+    <!-- Description: Text area -->
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" rows="4" required></textarea>
+
+    <!-- Application Deadline: Date picker or text input -->
+    <label for="appDeadline">Application Deadline:</label>
+    <input type="date" id="appDeadline" name="appDeadline" required>
+
+    <!-- Eligibility Criteria: Text area or checkboxes/radio buttons -->
+    <label for="eligibilityCriteria">Eligibility Criteria:</label>
+    <textarea id="eligibilityCriteria" name="eligibilityCriteria" rows="4" required></textarea>
+    <!-- Or use checkboxes/radio buttons -->
+
+    <!-- Grant Amount: Text input or dropdown -->
+    <label for="grantAmount">Grant Amount:</label>
+    <input type="text" id="grantAmount" name="grantAmount" required>
+    <!-- Or use dropdown/select options for monetary values -->
+
+    <!-- Notes: Text Area -->
+    <label for="notes">Notes:</label>
+    <textarea id="notes" name="notes" rows="4" required></textarea>
+
+    <!-- Application Link: URL input -->
+    <label for="applicationLink">Application Link:</label>
+    <input type="url" id="applicationLink" name="applicationLink" required>
+
+    <!-- Upload Photo -->
+    <label for="photo">Upload Photo:</label>
+    <input type="file" id="photo" name="photo" accept="image/*">
+
+    <!-- Submit Button -->
+    <input type="submit" value="Submit">
+</form>
+
+<!-- Include necessary scripts if any -->
+<script src="your-scripts.js"></script>
+
+</body>
+</html>

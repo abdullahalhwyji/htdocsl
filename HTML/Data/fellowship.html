@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fellowship Application</title>
+    <link rel="stylesheet" href="/CSS/Data/followship.css">
+</head>
+<body>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <h1>Fellowship Application</h1>
+        
+        <label for="fellowship_name">Fellowship Name:</label>
+        <input type="text" id="fellowship_name" name="fellowship_name" required>
+
+        <label for="organizing_institution">Organizing Institution:</label>
+        <input type="text" id="organizing_institution" name="organizing_institution" required>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" required></textarea>
+
+        <label for="degree">Degree:</label>
+        <div class="degree-options">
+            <label>
+                <input type="checkbox" id="bachelor" name="degree" value="bachelor">
+                Bachelor
+            </label>
+            <label>
+                <input type="checkbox" id="master" name="degree" value="master">
+                Master
+            </label>
+            <label>
+                <input type="checkbox" id="phd" name="degree" value="phd">
+                PhD
+            </label>
+        </div>
+
+        <label for="application_deadline">Application Deadline:</label>
+        <input type="date" id="application_deadline" name="application_deadline" required>
+
+        <label for="duration">Duration:</label>
+        <input type="text" id="duration" name="duration" required>
+
+        <label for="benefits">Benefits:</label>
+        <textarea id="benefits" name="benefits" required></textarea>
+
+        <label for="application_process">Application Process:</label>
+        <textarea id="application_process" name="application_process" required></textarea>
+
+        <label for="selection_criteria">Selection Criteria:</label>
+        <textarea id="selection_criteria" name="selection_criteria" required></textarea>
+
+        <label for="note">Notes:</label>
+        <textarea id="note" name="note" required></textarea>
+
+        <label for="application_link">Application Link:</label>
+        <input type="url" id="application_link" name="application_link" required>
+
+        <label for="photo">Upload Photo:</label>
+        <input type="file" id="photo" name="photo" accept="image/*" required>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
